@@ -1,0 +1,121 @@
+.nav{
+    background-color: #ACE2E1;
+}
+
+.Cart:hover{
+    cursor: pointer;
+}
+
+select{
+    background-color: #008DDA;
+    padding: 2px;
+    border: transparent;
+    border-radius: 2px;
+    color: white;
+}
+
+.rateNumber{
+    font-size: 13px;
+}
+.title,.description{
+    font-family :Arial, Helvetica, sans-serif,
+}
+
+button{
+    border-radius: 5px;
+    color : white;
+    border : transparent;
+    padding : 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #008DDA;
+}
+
+.removeIcon{
+    color: rgb(250, 152, 32);
+}
+
+.product{
+    border: 1px solid rgb(127, 122, 122);
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px #ACE2E1;
+}
+
+@media (min-width : 768px){
+    .product-row{
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    }
+    .rating{
+        display: inline-block;
+    }
+    .rating2{
+        display: none;
+    }
+}
+
+#my-icon-button{
+    background-color: orange;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width : 800px){
+    .rating{
+        display: none !important;
+    }
+    .rating2{
+        display: inline-block;
+    }
+
+    .product-row{
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+    }
+}
+
+@media (max-width : 580px){
+    .product-row{
+        display: grid;
+        padding: 20px;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+
+.cartLabel,.home{
+    color: #008DDA;
+    font-size: 20px;
+}
+
+.Cart{
+    border-radius: 5px;
+    border: 1px solid #008DDA;
+    padding: 6px 10px;
+    border-style: dashed;
+}
+
+.d-none-cart{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: gray;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+}
+
+.cart-title{
+    text-decoration: underline;
+}
